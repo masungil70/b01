@@ -11,6 +11,7 @@ public class B01Application {
 	//주석을 추가함 
 	//다음의 마성일이 추가함
 	//마성일70이 추가함
+	//새로운 기능 추가함 (마성일70)
 	public static void main(String[] args) {
 		SpringApplication.run(B01Application.class, args);
 	}
