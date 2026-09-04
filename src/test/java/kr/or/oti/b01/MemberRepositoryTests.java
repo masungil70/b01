@@ -15,34 +15,34 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootTest
 @Slf4j
 public class MemberRepositoryTests {
-
-    @Autowired
-    private MemberRepository memberRepository;
-
-    @Autowired
-    private PasswordEncoder passwordEncoder;
-
-    @Test
-    public void insertMembers(){
-
-        IntStream.rangeClosed(1,100).forEach(i -> {
-
-            Member member = Member.builder()
-                    .mid("member"+i)
-                    .mpw(passwordEncoder.encode("kosa1004"))
-                    .email("member"+i+"@oti.co.kr")
-                    .build();
-
-            member.addRole(MemberRole.USER);
-
-            if(i >= 90){
-                member.addRole(MemberRole.ADMIN);
-            }
-            memberRepository.save(member);
-
-        });
-
-    }
+//
+//    @Autowired
+//    private MemberRepository memberRepository;
+//
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
+//
+//    @Test
+//    public void insertMembers(){
+//
+//        IntStream.rangeClosed(1,100).forEach(i -> {
+//
+//            Member member = Member.builder()
+//                    .mid("member"+i)
+//                    .mpw(passwordEncoder.encode("kosa1004"))
+//                    .email("member"+i+"@oti.co.kr")
+//                    .build();
+//
+//            member.addRole(MemberRole.USER);
+//
+//            if(i >= 90){
+//                member.addRole(MemberRole.ADMIN);
+//            }
+//            memberRepository.save(member);
+//
+//        });
+//
+//    }
 
 
 }

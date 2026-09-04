@@ -8,9 +8,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @SpringBootTest
 class B01ApplicationTests {
 
-	@Test
-	void contextLoads() {
-		System.out.println("passwd(kosa1004) : " + new BCryptPasswordEncoder().encode("kosa1004"));
-	}
+//	@Test
+//	void contextLoads() {
+//		System.out.println("passwd(kosa1004) : " + new BCryptPasswordEncoder().encode("kosa1004"));
+//	}
 
 }
