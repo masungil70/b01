@@ -13,5 +13,6 @@ public class B01Application {
 	public static void main(String[] args) {
 		SpringApplication.run(B01Application.class, args);
 	}
+	//다음의 마성일이 코드를 추가함
 
 }
