@@ -15,5 +15,5 @@ public class B01Application {
 		SpringApplication.run(B01Application.class, args);
 	}
 	//다음의 마성일이 코드를 추가함
-
+	//다음 계정의 마성일2가 로그인 기능을 추가함
 }
